@@ -104,8 +104,8 @@ Recommended hosting security headers:
 - [ ] Security headers configured on hosting
 
 ## Roadmap
-- move contact submission behind a lightweight server endpoint to avoid exposing a third-party key in client code;
-- add automated tests for core UI flows and form behaviour;
-- optimise image delivery with modern formats and lazy loading;
-- add analytics and event tracking for section engagement and form conversions;
-- complete an accessibility compliance pass.
+- Move contact submission behind a lightweight server endpoint to avoid exposing a third-party key in client code;
+- Add automated tests for core UI flows and form behaviour;
+- Optimise image delivery with modern formats and lazy loading;
+- Add analytics and event tracking for section engagement and form conversions;
+- Complete an accessibility compliance pass.
