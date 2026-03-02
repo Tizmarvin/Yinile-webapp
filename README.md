@@ -5,22 +5,22 @@ This project is a responsive marketing and lead-generation website for Yinile Me
 It presents the organisation's services, operating model, and contact channels in a professional format for legal-sector clients.
 
 The site is designed to:
-- communicate credibility and service scope clearly;
-- guide users through key business sections quickly;
-- convert interested visitors through a secure contact form.
+- Communicate credibility and service scope clearly;
+- Guide users through key business sections quickly;
+- Convert interested visitors through a secure contact form.
 
 ## Target audience
-- attorneys and law firms;
-- claim administrators;
-- clients seeking medico-legal assessment services.
+- Attorneys and law firms;
+- Claim administrators;
+- Clients seeking medico-legal assessment services.
 
 ## Key features
-- responsive layout for desktop, tablet, and mobile devices;
-- sticky navigation with smooth section scrolling and active-link feedback;
-- services section with visual overlays and hover detail;
-- arrangements slider with manual controls and timed auto-advance;
-- contact form integrated with Web3Forms;
-- basic anti-spam hardening on contact submissions.
+- Responsive layout for desktop, tablet, and mobile devices;
+- Sticky navigation with smooth section scrolling and active-link feedback;
+- Services section with visual overlays and hover detail;
+- Arrangements slider with manual controls and timed auto-advance;
+- Contact form integrated with Web3Forms;
+- Basic anti-spam hardening on contact submissions.
 
 ## Tech stack
 - React 19
@@ -45,16 +45,16 @@ The app follows a compositional, section-based structure:
 
 ## Security and reliability
 Implemented:
-- environment-based key configuration via `VITE_WEB3FORMS_ACCESS_KEY`;
-- hidden honeypot field on contact form;
-- minimum fill-time check before submit;
-- submission cooldown window;
-- disabled button state while requests are in-flight;
-- error handling for failed API/network requests.
+- Environment-based key configuration via `VITE_WEB3FORMS_ACCESS_KEY`;
+- Hidden honeypot field on contact form;
+- Minimum fill-time check before submit;
+- Submission cooldown window;
+- Disabled button state while requests are in-flight;
+- Error handling for failed API/network requests.
 
 Important note:
-- this is a frontend application, so runtime keys are still visible in the browser.
-- if a key is exposed, rotate it immediately in Web3Forms.
+- This is a frontend application, so runtime keys are still visible in the browser.
+- If a key is exposed, rotate it immediately in Web3Forms.
 
 Recommended hosting security headers:
 - `Content-Security-Policy`
@@ -64,14 +64,14 @@ Recommended hosting security headers:
 - `Strict-Transport-Security`
 
 ## Performance notes
-- production build succeeds and outputs optimised static assets;
-- current image assets are high-resolution and could be further compressed for faster first load on slower networks;
-- next step: generate WebP/AVIF variants and serve responsive image sizes.
+- Production build succeeds and outputs optimised static assets;
+- Current image assets are high-resolution and could be further compressed for faster first load on slower networks;
+- Next step: generate WebP/AVIF variants and serve responsive image sizes.
 
 ## Accessibility and UX notes
-- touch targets were adjusted for small-screen usability;
-- responsive breakpoints were added for major components;
-- next step: run a formal accessibility audit (keyboard flow, contrast checks, landmark structure, and ARIA review).
+- Touch targets were adjusted for small-screen usability;
+- Responsive breakpoints were added for major components;
+- Next step: run a formal accessibility audit (keyboard flow, contrast checks, landmark structure, and ARIA review).
 
 ## Local setup
 1. Install dependencies:
