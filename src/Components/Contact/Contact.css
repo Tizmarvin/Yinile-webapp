@@ -1,0 +1,151 @@
+.contact-section{
+    margin: 30px auto 80px;
+    max-width: 90%;
+}
+
+.contact-heading{
+    color: #000F38;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-heading img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.contact-intro{
+    max-width: 900px;
+    line-height: 1.4;
+    text-align: justify;
+    text-align-last: left;
+    margin: 0 auto 24px;
+}
+
+.contact{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.contact-col{
+    flex-basis: 48%;
+    color: #534f4f;
+}
+.contact-col p{
+    max-width: 450px;
+    line-height: 1.3;
+}
+.contact-col ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.contact-col ul li img{
+    width: 25px;
+    margin-right: 10px;
+}
+.contact form input, .contact form textarea{
+    display: block;
+    width: 100%;
+    background: #d5eef1;
+    padding: 12px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+
+.contact-honeypot{
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.contact-col span{
+    display: block;
+    margin:20px 0;
+}
+.dark-btn {
+  background-color: #000f38;
+  color: #ffffff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+}
+
+.dark-btn:hover {
+  background-color: #002266;
+}
+
+.dark-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-result {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.form-result.success {
+  color: #2e7d32;
+}
+.form-result.error {
+  color: #d32f2f;
+}
+
+@media (max-width: 900px){
+  .contact-section{
+    max-width: 100%;
+  }
+
+  .contact{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-col{
+    flex-basis: 100%;
+  }
+
+  .contact-col p{
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 360px){
+  .contact-heading{
+    font-size: 22px;
+  }
+
+  .contact-intro{
+    font-size: 14px;
+  }
+
+  .contact-col ul li{
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .contact form input, .contact form textarea{
+    font-size: 14px;
+  }
+}
